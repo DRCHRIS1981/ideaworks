@@ -1,20 +1,11 @@
 <!doctype html>
 <html lang="es">
 <head>
-
-  <nav style="margin-top:10px;">
-  <a href="index.html">Inicio</a> |
-  <a href="about.html">Sobre mí</a> |
-  <a href="cursos.html">Cursos</a> |
-  <a href="contacto.html">Contacto</a>
-</nav>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chris — Sitio con GitHub Pages</title>
   <meta name="description" content="Sitio personal de Chris. Cursos, proyectos y contacto." />
 
-  <!-- Estilos sencillos -->
   <style>
     :root{
       --accent: #0b74de;
@@ -29,19 +20,19 @@
       margin:0;
       background:var(--bg);
       color:#122028;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
       line-height:1.5;
     }
     header{
       background:linear-gradient(90deg, rgba(11,116,222,0.95), rgba(7,86,163,0.95));
       color:white;
-      padding:28px 18px;
+      padding:18px 28px;
       display:flex;
       align-items:center;
       gap:14px;
       border-bottom-left-radius:18px;
       border-bottom-right-radius:18px;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     .logo{
       width:64px;
@@ -59,6 +50,16 @@
     .logo img{ width:100%; height:100%; object-fit:cover; }
     .brand h1{ margin:0; font-size:20px; letter-spacing:0.2px; }
     .brand p{ margin:2px 0 0 0; opacity:0.92; font-size:13px; }
+    nav a{
+      text-decoration:none;
+      padding:6px 12px;
+      border-radius:6px;
+      margin-right:6px;
+      background-color: #0b74de;
+      color:white;
+      font-weight:600;
+    }
+    nav a:hover{ background-color:#095bb5; }
 
     main{ max-width:980px; margin:28px auto; padding:0 18px; }
     .hero{
@@ -101,26 +102,26 @@
 
     footer{ text-align:center; color:var(--muted); padding:28px 12px; font-size:14px; }
 
-    /* simple sections */
     .grid-3{ display:grid; grid-template-columns:1fr; gap:12px; margin-top:14px; }
     @media(min-width:760px){ .grid-3{ grid-template-columns:repeat(3,1fr); } }
     .small{ font-size:14px; color:var(--muted) }
-
     a.inline-link{ color:var(--accent); text-decoration:none; font-weight:600; }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo" aria-hidden="true">
-      <!-- Si tienes un logo, súbelo al repo y cambia la etiqueta img -->
-      <!-- <img src="logo.png" alt="Logo"> -->
-      CP
-    </div>
+    <div class="logo" aria-hidden="true">CP</div>
     <div class="brand">
       <h1>Chris — Sitio Personal</h1>
       <p>Cursos, proyectos y recursos — hecho con GitHub Pages</p>
     </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
   </header>
 
   <main>
@@ -150,7 +151,6 @@
 
       <aside class="side-hero card">
         <div class="avatar" role="img" aria-label="Foto de Chris">
-          <!-- Reemplaza por tu imagen: <img src="avatar.jpg" alt="Chris"> -->
           <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Avatar placeholder">
         </div>
         <div>
@@ -199,6 +199,7 @@
 
 </body>
 </html>
+
 
 
 
