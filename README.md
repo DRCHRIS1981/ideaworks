@@ -1,2 +1,11 @@
-# ideaworks
-En IdeaWorks, creemos que el conocimiento impulsa la innovación. Somos una plataforma de capacitación y desarrollo profesional diseñada para ayudarte a aprender a tu ritmo y desde cualquier lugar.
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido a mi sitio</title>
+</head>
+<body>
+  <h1>Hola, soy Chris 👋</h1>
+  <p>Este es mi primer sitio web con GitHub Pages.</p>
+</body>
+</html>
